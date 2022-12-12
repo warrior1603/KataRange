@@ -1,10 +1,12 @@
+package RangeExample;
+
 public class Range {
 
 	private int end;
 	private int start;
 	private String input;
 
-	public Range(String input) {
+	public Range(String input) throws InvalidRangeArgumentException {
 		if ((input.startsWith("[") || input.startsWith("(")) && (input.endsWith("]") || input.endsWith(""))) {
 			this.input = input;
 			setStart(Integer.parseInt(String.valueOf(input.charAt(1))));
