@@ -1,4 +1,4 @@
-package RangeExample;
+package range.example;
 
 public class Range {
 
